@@ -1,0 +1,108 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+#search-box {
+  margin-top: 20px;
+  border: 1px;
+  border-style: solid;
+  width: 50%;
+  margin-left: 30%;
+  margin-right: 30%;
+  width: 40%;
+}
+
+#search-heading {
+  background-color: rgba(5, 69, 130);
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+#search-heading p:first-child {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#search-heading p:last-child {
+  font-size: 10px;
+  color: lightgray;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+#location-inputs p {
+  font-size: 8px;
+}
+
+#location-inputs p:first-child {
+  margin-left: 5%;
+}
+
+#street-input {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#city-div {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#city {
+  width: 50%;
+}
+#city p:first-child {
+  margin-left: 0;
+}
+
+#postal p:first-child {
+  margin-left: 0;
+}
+
+#postal {
+  width: 50%;
+}
+
+#city-input {
+  width: 85%;
+  text-align: right;
+}
+
+#postalcode-input {
+  margin-left: 0;
+  width: 50%;
+  text-align: left;
+}
+
+#country-selecter-div p:first-child {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+#country-selecter-div {
+  margin-left: 5%;
+  padding-bottom: 20px;
+}
+
+#country-selector {
+  width: 80px;
+}
+
+#search-button {
+  margin-left: 5%;
+  margin-bottom: 10px;
+  background-color: rgb(244, 222, 77);
+  border-style: none;
+  width: 80px;
+  height: 25px;
+  font-weight: 200;
+  font-size: 10px;
+  letter-spacing: 0px;
+}
