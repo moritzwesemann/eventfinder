@@ -3,6 +3,13 @@ body {
   font-weight: 200;
 }
 
+#foot-note {
+  font-size: 7px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  color: darkgray;
+}
+
 #search-box {
   margin-top: 20px;
   border: 1px;
@@ -28,75 +35,51 @@ body {
   margin-bottom: 0;
 }
 
-#search-heading p:last-child {
-  font-size: 10px;
+#search-heading-subtext {
+  font-size: 12px;
   color: lightgray;
   margin-top: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+#location-inputs {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #location-inputs p {
   font-size: 8px;
-}
-
-#location-inputs p:first-child {
-  margin-left: 5%;
+  margin-bottom: 1px;
 }
 
 #street-input {
   display: block;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
-#city-div {
+#city-postal-container {
   display: flex;
-  width: 90%;
   margin: 0 auto;
+  width: 100%;
 }
 
-#city {
-  width: 50%;
-}
-#city p:first-child {
-  margin-left: 0;
+#city-postal-container > div {
+  width: 40%;
 }
 
-#postal p:first-child {
-  margin-left: 0;
+.half-input {
+  width: 80%;
 }
 
-#postal {
-  width: 50%;
-}
-
-#city-input {
-  width: 85%;
-  text-align: right;
-}
-
-#postalcode-input {
-  margin-left: 0;
-  width: 50%;
-  text-align: left;
-}
-
-#country-selecter-div p:first-child {
-  margin-left: 0;
-  margin-bottom: 0;
-}
-#country-selecter-div {
-  margin-left: 5%;
-  padding-bottom: 20px;
-}
-
-#country-selector {
-  width: 80px;
+#country-picker {
+  display: block;
+  margin: 10px 0;
 }
 
 #search-button {
-  margin-left: 5%;
   margin-bottom: 10px;
   background-color: rgb(244, 222, 77);
   border-style: none;

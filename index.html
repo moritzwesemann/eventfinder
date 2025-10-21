@@ -16,30 +16,33 @@
     <div id="search-box">
       <div id="search-heading">
         <p>Event Finder</p>
-        <p>Find events new by powered by ticketmaster</p>
+        <p id="search-heading-subtext">Find events close by</p>
+        <p id="foot-note">*powered by ticketmaster</p>
       </div>
 
       <div id="location-inputs">
-        <p>Street</p>
-        <input type="text" name="" id="street-input" />
-        <div id="city-div">
-          <div id="city">
+        <div id="street-container">
+          <p>Street</p>
+          <input type="text" name="" id="street-input" />
+        </div>
+
+        <div id="city-postal-container">
+          <div>
             <p>City</p>
-            <input type="text" id="city-input" />
+            <input type="text" class="half-input" />
           </div>
-          <div id="postal">
-            <p>Postal Code</p>
-            <input type="text" id="postalcode-input" />
+          <div id="postal-code-div">
+            <p>Postalcode</p>
+            <input type="text" class="half-input" id="postal-input" />
           </div>
         </div>
-        <div id="country-selecter-div">
-          <p>Country</p>
-          <select name="" id="country-selector">
-            <option></option>
-            <option>USA</option>
-            <option>Germany</option>
-          </select>
-        </div>
+
+        <select id="country-picker">
+          <option>Select Country</option>
+          <option value="">Germany</option>
+          <option value="">USA</option>
+          <option value="">Canada</option>
+        </select>
 
         <button id="search-button">Search</button>
       </div>
