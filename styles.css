@@ -17,7 +17,7 @@ body {
   width: 50%;
   margin-left: 30%;
   margin-right: 30%;
-  width: 40%;
+  width: 400px;
 }
 
 #search-heading {
@@ -66,12 +66,18 @@ body {
   width: 100%;
 }
 
-#city-postal-container > div {
-  width: 40%;
+#city-div {
+  width: 45%;
+}
+
+#postal-code-div {
+  width: 45%;
+  margin-left: auto;
 }
 
 .half-input {
-  width: 80%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 #country-picker {
