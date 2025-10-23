@@ -102,5 +102,34 @@ body {
   border: 1px;
   border-style: solid;
 
-  min-height: 200px;
+  min-height: 100px;
+}
+
+#result {
+  display: flex;
+  height: 100px;
+}
+
+#result h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#result p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#result a {
+  font-size: 9px;
+}
+
+.event-img {
+  width: 100px;
+  height: 100px;
+}
+
+.event-text {
+  margin-left: 20px;
 }
