@@ -1,11 +1,11 @@
 const search_btn = document.getElementById("search-button");
 const city = document.getElementById("city-input");
 const postal_code = document.getElementById("postal-input");
+const search_results = document.getElementById("search_results");
+const result_template = document.querySelector(".result");
 
 search_btn.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log(city.value);
-  console.log(postal_code.value);
 
   search_string =
     "https://app.ticketmaster.com/discovery/v2/events.json?apikey=CvGYc7b4DklqeRQKwQ2CQOVq6CX1AAK9";
@@ -25,9 +25,34 @@ search_btn.addEventListener("click", (e) => {
       .json()
       .then((data) => {
         console.log(data);
+        const {
+          _embedded: { events },
+        } = data;
+
+        for (const e of events) {
+          fillEvent(e);
+        }
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   });
 });
+
+function fillEvent(e) {
+  const el = result_template.cloneNode(true);
+  el.classList.remove("hidden");
+
+  const img_el = el.querySelector(".event-img").querySelector("img");
+  const header_el = el.querySelector(".event-text").querySelector("h1");
+  const date_el = el.querySelector(".event-text").querySelector("p");
+  const link_el = el.querySelector(".event-text").querySelector("a");
+
+  header_el.textContent = e.name;
+  date_el.textContent = "Start Date: " + e.dates.start.localDate;
+  link_el.href = e.url;
+  img_el.src = e.images[0].url;
+
+  console.log(e.images[0].url);
+  search_results.appendChild(el);
+}

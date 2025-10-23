@@ -96,40 +96,52 @@ body {
 
 /* ---------------Search Results---------------*/
 
-#search-results {
+#search_results {
   width: 400px;
   margin: 20px auto;
   border: 1px;
   border-style: solid;
-
   min-height: 100px;
 }
 
-#result {
+.result {
   display: flex;
   height: 100px;
 }
 
-#result h1 {
-  font-size: 16px;
+.result h1 {
+  font-size: 14px;
   font-weight: 400;
-}
-
-#result p {
-  font-size: 12px;
-  font-weight: 300;
   margin-bottom: 0;
 }
 
-#result a {
+.result p {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.result a {
   font-size: 9px;
 }
 
 .event-img {
   width: 100px;
   height: 100px;
+  border: 1px solid black;
+}
+.event-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .event-text {
   margin-left: 20px;
+}
+
+.hidden {
+  display: none;
 }
